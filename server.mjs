@@ -10,7 +10,7 @@ let messageSchema = new mongoose.Schema({
     from: String,
     createdOn: { type: Date, default: Date.now }
 });
-const messageModel = mongoose.model('messages', messageSchema);
+const messageModel = mongoose.model('ChatScreen', messageSchema);
 
 /*--------------------------------------------------------------*/
 
