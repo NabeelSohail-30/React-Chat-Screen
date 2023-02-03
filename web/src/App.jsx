@@ -21,6 +21,7 @@ import Home from "./components/home/";
 import Chat from "./components/chat/";
 import About from "./components/about/";
 import Chat2 from "./components/chatV2";
+import Chat3 from "./components/chatv3";
 
 const App = () => {
   const [anchorElNav, setAnchorElNav] = useState(null);
@@ -107,6 +108,11 @@ const App = () => {
                 </Link>
               </Button>
               <Button sx={{ my: 2, color: "white", display: "block" }}>
+                <Link className="buttonLink" to={"/chat3"}>
+                  Chat Screen v3
+                </Link>
+              </Button>
+              <Button sx={{ my: 2, color: "white", display: "block" }}>
                 <Link className="buttonLink" to={"/about"}>
                   About
                 </Link>
@@ -151,6 +157,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/chat" element={<Chat />} />
         <Route path="/chat2" element={<Chat2 />} />
+        <Route path="/chat3" element={<Chat3 />} />
         <Route path="/about" element={<About />} />
         <Route path="*" element={<Navigate to={"/"} />} />
       </Routes>
